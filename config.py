@@ -16,6 +16,7 @@ class Config:
     
     # ===== CORE API SETTINGS =====
     OPENAI_API_KEY = os.getenv('OPENAI_API_KEY', '')
+    GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', '')
     OPENAI_MODEL = os.getenv('OPENAI_MODEL', 'gpt-4o-realtime-preview-2024-12-17')
     OPENAI_VOICE = os.getenv('OPENAI_VOICE', 'coral')
     OPENAI_TEMPERATURE = float(os.getenv('OPENAI_TEMPERATURE', '0.7'))
@@ -99,8 +100,8 @@ class Config:
         """Validate required configuration"""
         errors = []
         
-        if not cls.OPENAI_API_KEY:
-            errors.append("OPENAI_API_KEY is required")
+        if not cls.GEMINI_API_KEY:
+            errors.append("GEMINI_API_KEY is required")
             
         if not cls.COMPANY_NAME:
             errors.append("COMPANY_NAME is required")
