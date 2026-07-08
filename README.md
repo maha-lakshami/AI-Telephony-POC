@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Telephony Proof of Concept
 
 An AI-powered telephony application that enables real-time voice conversations using Google's Gemini Live API and Exotel-compatible media streaming.
@@ -114,3 +115,6 @@ Create a `.env` file and configure:
 ## Author
 
 Mahalakshmi R K
+=======
+# AI Telephony POC
+>>>>>>> 1732b66 (Updated README)
